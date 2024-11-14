@@ -4,6 +4,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 /* Logo Section */
@@ -61,10 +63,11 @@
 
 .navbar-links a {
     text-decoration: none;
-  }
-  .navbar-links a:hover {
-    color: #007bff;  
-  }
+}
+
+.navbar-links a:hover {
+    color: #007bff;
+}
 
 /* Navbar Buttons */
 .navbar-buttons {
@@ -123,15 +126,8 @@
 .main-content {
     display: flex;
     align-items: center;
-    padding: 40px;
-    /* display: flex;
-     position: relative;
-    align-items: center;
-    padding: 40px;
-    background-image: url("../IMG/Mask (1).png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
+    /* padding: 40px 0px; */
+    position: relative;
 }
 
 .text-content {
@@ -168,17 +164,25 @@
     background-color: #0056b3;
 }
 
-.image-content img {
-    width: 100%;
-    max-width: 500px;
+.image-content {
+    right: 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* padding: 40px; */
+    background-image: url("../IMG/Mask (1).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .main-image {
     width: 691px;
-    height: 401px;
-    max-width: 500px;
-/* background-image: url("../IMG/Mask\ \(1\).png");
-      background-repeat: no-repeat; */
+    height: 416px;
+    top: 106px;
+    left: 715px;    
+    gap: 0px;
+    opacity: 0px;
 }
 
 @media (max-width: 992px) {
@@ -192,6 +196,11 @@
 
     .main-content {
         padding: 20px;
+    }
+
+    .main-image{
+        width: 479px;
+        height: 416px;
     }
 }
 
@@ -209,6 +218,7 @@
     .image-content img {
         max-width: 300px;
         height: 301px;
+        padding: 30px;
     }
 }
 
@@ -269,7 +279,7 @@
 /* \\\\\\ About  \\\\\\ */
 .About_Main {
     width: 100%;
-    max-width: 1344px;
+    /* max-width: 1344px; */
     height: auto;
     margin: 0 auto;
     padding: 20px;
@@ -407,7 +417,7 @@
 /*//// OurServices ///// */
 
 .services_BG {
-    background-color: #92aab5;
+    background-color: #f8f9fa;
 }
 
 .our-services-section {
@@ -419,7 +429,10 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
+    margin-bottom: 8px;
     width: 90%;
     transition: transform 0.3s ease;
 }
@@ -451,6 +464,10 @@
 
     .see-all-link {
         display: none;
+    }
+
+    .service-card{
+        margin-left: 16px;
     }
 }
 
@@ -548,8 +565,9 @@
 }
 
 .testimonial-card {
+    border: 1px solid none;
     background: #fff;
-    border-radius: 12px;
+    border-radius: 39px 39px 39px 0px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -611,11 +629,19 @@
 /* Sidebar */
 .sidebar {
     padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .sidebar h3 {
     font-size: 1.5rem;
     color: #2c4fdd;
+    font-weight: bold;
+}
+
+.sidebar h3 span {
+    display: block;
+    margin: 13px 0px;
 }
 
 .categories {
@@ -698,26 +724,26 @@
     align-items: center;
     background-color: #0096ff;
     color: white;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 27px;
+    border-radius: 16px;
     max-width: 100%;
     margin: 0 auto;
-  }
-  
-  /* Content styling */
-  .content h2 {
+}
+
+/* Content styling */
+.content h2 {
     margin: 0;
     font-size: 1.5em;
-  }
-  
-  .content p {
+}
+
+.content p {
     margin: 5px 0 0;
     font-size: 1em;
     color: #d0eaff;
-  }
-  
-  /* Button styling */
-  .content_button {
+}
+
+/* Button styling */
+.content_button {
     background-color: white;
     color: #0096ff;
     border: none;
@@ -729,26 +755,25 @@
     align-items: center;
     gap: 5px;
     transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
     background-color: #f0f8ff;
-  }
-  
-  .button span {
+}
+
+.button span {
     font-size: 1.2em;
-  }
-  
-  /* Responsiveness */
-  @media (max-width: 600px) {
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
     .container {
-      flex-direction: column;
-      text-align: center;
-      padding: 15px;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
     }
-  
+
     .button {
-      margin-top: 10px;
+        margin-top: 10px;
     }
-  }
-  
+}

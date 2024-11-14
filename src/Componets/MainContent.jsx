@@ -1,7 +1,6 @@
 import React from 'react';
 import '../Style/Style.css';
 import IMG1 from '../IMG/1851effc21b69474c650230d559fac2f.png';
-import BG_IMG from "../IMG/Mask (1).png";
 
 function MainContent() {
   return (
@@ -16,12 +15,12 @@ function MainContent() {
         </div>
 
         <div className="image-content">
-          <img src={IMG1} alt="Illustration" className="main-image" />
+           <img src={IMG1} alt="Illustration" className="main-image" />
         </div>
       </section>
 
       <section>
-        <div className="feature-row">
+        <div className="feature-row py-4">
           <div className="feature-col">
             <div className="feature-card">
               <h3 className='text-primary'>Business Solution</h3>

@@ -2,7 +2,7 @@
 .footer-container {
     background-color: #f9f9f9;
     padding: 40px 20px;
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
   .footer-content {
@@ -61,12 +61,13 @@
     flex-direction: column;
     gap: 10px;
   }
-  
+    
   .social-icons svg {
-    color: #555;
+    color: #1877F2; 
     font-size: 1.5em;
     margin: 0 8px;
     cursor: pointer;
+    transition: color 0.3s;
   }
   
   .social-icons svg:hover {
@@ -82,7 +83,7 @@
     margin-left: 8px;
     padding: 5px;
     font-size: 0.9em;
-    border: 1px solid #ddd;
+    border: 2px solid #0046c0;
     border-radius: 4px;
   }
   

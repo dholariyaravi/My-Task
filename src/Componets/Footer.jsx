@@ -49,10 +49,10 @@ export default function Footer() {
                     <div className="social-icons">
                         <FaFacebook />
                         <FaLinkedin />
-                        <FaTwitter />
+                        <FaTwitter  />
                         <FaInstagram />
                     </div>
-                    <div className="language-select my-3">
+                    <div className="language-select my-3 social-icons">
                         <FaGlobe />
                         <select className='px-2'>
                             <option>English - En</option>

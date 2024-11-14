@@ -4,10 +4,10 @@ import Case_Studies from '../IMG/Case_Studies.jpeg';
 
 const CaseStudies = () => {
   return (
-    <div id='CaseStudies' className="container">
+    <div id='CaseStudies' className="container mt-4">
       <div className="row">
         <div className="col-md-3 sidebar">
-          <h3>Case Studies</h3>
+          <h3>Case <span>Studies</span></h3>
           <ul className="categories">
             <li className="category active">Corporate</li>
             <li className="category">Advertising</li>
@@ -41,11 +41,11 @@ const CaseStudies = () => {
       <section>
         <div className="Case_content my-5">
           <div className="content">
-            <h2>Ready to get started?</h2>
-            <p>Pellentesque ac bibendum tortor. Nulla eget lobortis lacus.</p>
+            <h2><b>Ready to get started?</b></h2>
+            <p><b>Pellentesque ac bibendum tortor. Nulla eget lobortis lacus.</b></p>
           </div>
           <button className="content_button">
-            WRITE TO US <span>&#10132;</span>
+            <b>WRITE TO US</b> <span>&#10132;</span>
           </button>
         </div>
       </section>

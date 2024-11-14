@@ -7,14 +7,15 @@ export default function About() {
     <div className='About_Main'>
       <div className='container'>
         <div className='row'>
-          <div className='col-sm-6'>
+          <div className='col- col-sm-6 col-md-6 col-lg-6'>
             <img src={Artwork} alt="Artwork" className='About_IMG' />
           </div>
 
-          <div className='col-lg-6 col-md-12 about-content'>
+          <div className='col- col-md-12 col-lg-6  about-content'>
             <div className='About_Text'>
               <h4 className='py-4'>Nulla lobortis nunc vitae purus facilisis</h4>
-              <span>Vestibulum sit amet tortor libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper ultrices. Aenean facilisis vitae purus facilisis semper.</span>
+              <span>Vestibulum sit amet tortor libero lobortis semper at et odio. In eu tellus tellus. 
+                Pellentesque ullamcorper ultrices. Aenean facilisis vitae purus facilisis semper.</span>
 
               <div className='About_stats d-flex justify-content-between align-items-center'>
                 <div className="stat-item">
